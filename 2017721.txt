@@ -1,0 +1,13 @@
+wsimport 这个命令居然是jdk自带的命令，能够生成webservice部分的代码
+
+REST和SOAP是无法进行比较的，因为REST仅仅是web本身的结构风格，是与协议无关的。
+SOAP是一种协议，只能使用XML文件进行描述数据。
+
+使用wsimport生成代码的方式访问webservice，可以将生成的代码压缩成一个jar包使用，或者直接把这些类
+放到源文件中（最好还是打包）
+
+客户端调用WebService的方式：（http://www.cnblogs.com/siqi/archive/2013/12/15/3475222.html）
+    1.通过wximport生成代码
+    2.通过客户端编程方式
+    3.通过ajax调用方式
+    4.通过 URL Connection 方式调用
